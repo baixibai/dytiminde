@@ -1,0 +1,479 @@
+	html, body
+	{
+		height: 100%;
+		background:#fff;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background:#fff;
+		font-family: Arial, sans-serif;
+		font-size: 13pt;
+		font-weight: 300;
+		color: #656565;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		color: #2B3F48;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.actions
+	{
+		text-align: center;
+	}
+		
+		ul.actions li
+		{
+		}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		color: #0000FF;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}  
+
+
+/*取消按钮在inphone上的默认样式*/  
+input[type=button]{-webkit-appearance:none;outline:none}   
+input::-webkit-input-placeholder{color:#F0F0F0;}  
+textarea::-webkit-input-placeholder{color:#F0F0F0;}  
+input::-webkit-input-speech-button {display:none}  
+table {border-collapse:collapse;border-spacing:0;}  
+th {text-align:inherit;}  
+fieldset,img {border:none;}  
+abbr,acronym {border:none;font-variant:normal;}  
+del {text-decoration:line-through;}  
+ol,ul {list-style:none;}  
+caption,th {text-align:left;}  
+sub,sup {line-height:0;position:relative;vertical-align:baseline;}  
+sup {top:-0.5em;}  
+sub {bottom:-0.25em;}  
+ins,a,a:hover {text-decoration:none;}  
+a:focus,*:focus {outline:none;}  
+
+ 
+a, article, body, div, em, form, h1, h2, h3, h4, h5, h6, i, input, li, ol, p, section, strong, ul, span {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+:root{
+	--bluecolor:#0283DF;
+	--fffcolor:#ffffff;
+	--666color:#666666;
+	--bordercolor:#DADADA;
+} 
+
+
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+	display: inline-block;
+	padding: 0px 20px;
+	background: var(--bluecolor);
+	border-radius: 6px;
+	line-height: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	color: #FFF;
+	cursor:pointer;
+}
+
+.button:before
+{
+	display: inline-block;
+	background: #FFC31F;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	color: #272925;
+}
+
+	
+.topmenu{
+	 background:rgba(0,0,0,0.8); 
+	 overflow:hidden;
+	 width:100%;
+	 position:absolute;
+	 top:0px;
+	 left:0px;
+	 z-index:10;
+	 height:40px;
+}
+.topmenu .itemmenu{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.topmenu .itemmenu .title{
+	height:20px;
+	line-height:20px;
+	float:right;
+	margin:10px 0px;
+	padding:0 20px;
+	color:#ffffff;
+	font-size:14px;
+	font-weight:500;
+}
+.topmenu .itemmenu .title:first-child{
+	text-align:right;
+	padding-right:0px;
+}
+.topmenu .itemmenu .title:nth-child(2n){
+	border-right:1px solid #ffffff;
+}
+.head{
+	background:rgba(0,0,0,0.8); 
+	overflow: hidden;
+	width:100%;
+	position:absolute;
+	top:40px;
+	left:0px;
+	z-index:1000;
+	height:80px;
+	-moz-box-shadow:0px 5px 10px #333333; 
+	-webkit-box-shadow:0px 5px 10px #333333; 
+	box-shadow:0px 5px 10px #333333;
+}
+.header{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1000px;
+}
+.headfix{
+	position:fixed;
+	top:0px;
+}
+#logo
+{
+	float:left;
+	padding:20px 0px;
+}
+
+#logo h3
+{
+	color: #fff;
+	font-size:16px;
+	font-weight:500;
+	text-align:center;
+	line-height:20px;
+}
+#logo h3 .blue{
+	color:#0283DF;
+}
+#logo a
+{
+	text-decoration: none;
+	color: #fff;
+}
+#menu
+{
+	float:right;
+}
+
+#menu ul
+{
+	display: inline-block;
+	float: right;
+	margin-right:-27px;
+}
+#menu li
+{
+	display: block;
+	float: right;
+	text-align: center;
+	height:80px;
+	overflow:hidden;
+}
+#menu li:hover{
+	border-bottom:2px solid #0283DF;
+}
+#menu li.active{
+	border-bottom:2px solid #0283DF;
+}
+#menu li a
+{
+	padding:20px 0px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #FFF;
+	height:80px;
+	line-height:80px;
+	overflow:hidden;
+	float:left;
+}
+#menu li a span{
+	width:100%;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+	float:left;
+	color:#fff;
+	font-weight:500;
+}
+.navbox{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.zindex101{
+	z-index:101;
+}
+.tabbox{
+	overflow:hidden;
+	width:1000px;
+	margin:0 auto;
+	margin-top:-35px;
+}
+.tabbox .tabmenu{
+	width:100%;
+	overflow:hidden;
+}
+.tabbox .tabmenu li{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	color:#666;
+	background:rgba(255,255,255,0.7);
+	margin-right:10px;
+	float:left;
+	text-align:center;
+	font-size:15px;
+	font-weight:500;
+}
+.tabbox .tabmenu li:hover{
+	background:#fff;
+	color:var(--bluecolor);
+}
+.tabbox .tabmenu li.active{
+	background:#fff;
+	color:var(--bluecolor);
+}
+.searchbox{
+	width:100%;
+	overflow:hidden;
+	padding:40px 0px;
+}
+.searchbox .contitle{
+	position:relative;
+	width:300px;
+	float:left;
+	height:auto;
+}
+.searchbox .contitle h3{
+	width:100%;
+	font-size:15px;
+	font-weight:bold;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#333;
+}
+.searchbox .contitle .title{
+	width:100%;
+	font-size:14px;
+	font-weight:500;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#333;
+}
+.searchbox .contitle .input{
+	width:100%;
+	font-size:14px;
+	font-weight:500;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+}
+.contitle .input input{
+	line-height:30px;
+	font-size:14px;
+	float:left;
+	border:none;
+	border-radius:2px;
+	padding:0 5px;
+	color:#666;
+	font-size:12px;
+	background:#F2F2F2;
+	border:1px solid #999;
+}
+.searchbox .contitle .colbox{
+	width:100%;
+	overflow:hidden;
+}
+.searchbox .contitle .colbox .col{
+	width:130px;
+	float:left;
+	overflow:hidden;
+}
+.colbox .col .title{
+	width:100%;
+	font-size:14px;
+	font-weight:500;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#333;
+}
+.colbox .col .coinput{
+	width:100%;
+	font-size:14px;
+	font-weight:500;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+}
+.colbox .col .coinput input{
+	line-height:30px;
+	font-size:14px;
+	float:left;
+	border-radius:2px;
+	padding:0 5px;
+	color:#666;
+	font-size:12px;
+	background:#F2F2F2;
+	border:1px solid #999;
+}
+.w160{
+	width:160px;
+}
+.w120{
+	width:120px;
+}
+.fullimg{
+	margin:0 auto;
+	width:1000px;
+	text-align:center;
+}
+.fullimg img{
+	margin:40px 0px;
+}
+.flexbox{
+  width:100%;
+  overflow:hidden;
+}
+.flexbox .flexchild{
+	width:20%;
+	position:relative;
+	height:500px;
+	overflow:hidden;
+	float:left;
+}
+
+.flexbox .flexchild .conimg{
+	height:500px;
+}
+.flexchild .conbox{
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.3);
+	cursor:pointer;
+	height:500px;
+}
+.flexchild .conbox:hover{
+	transition: all 1.5s; 
+	background:none;
+}
+.flexbox .imghover{
+	transition: all 0.6s; 
+	transform: scale(1.4);
+}
+.flexchild .conbox .infobox{
+	float:left;
+	width:100%;
+	margin-top:420px;
+	padding:10px 20px;
+	height:80px;
+}
+.flexchild .conbox:hover .infobox{
+	transition: all 0.6s; 
+	background:rgba(0,0,0,0.7);
+}
+.flexchild .conbox .infobox .icimg{
+	float:left;
+	height:30px;
+	margin-right:10px;
+}
+.flexchild .conbox .infobox p{
+	width:100%;
+	overflow: hidden;
+}
+.flexchild .conbox .infobox .spl{
+	float:left;
+	color:#fff;
+	line-height:30px;
+	font-size:18px;
+}
+.flexchild .conbox .infobox .spr{
+	float:right;
+	color:var(--bluecolor);
+	line-height:30px;
+	font-size:16px;
+}
+.albumbox{
+	width:100%;
+	padding:0px 50px;
+	display: flex;
+	flex-flow: row;
+	align-items: stretch;
+	justify-content:space-between;
+}
+.albumbox .albumchild{
+	width:100%;
+	-webkit-flex:1;
+	-moz-flex:1;
+	flex:1;
+	margin-right:20px;
+	float:left;
+	overflow:hidden;
+	border:1px solid var(--bordercolor);
+}
+.albumbox .albumchil
